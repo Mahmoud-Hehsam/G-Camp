@@ -17,51 +17,51 @@ body{
 
 /* small */
 @media (max-width: 400px){
-    .parent{
+    .parent , .back{
         width: 300px;
     }
 }
 @media (min-width: 400px) and (max-width:600px){
-    .parent{
+    .parent , .back{
         width: 400px;
     }
 }
 @media (min-width: 768px){
-    .parent{
+    .parent , .back{
         width: 750px;
     }
 }
 /* medium */
 @media (min-width: 992px){
-    .parent{
+    .parent , .back{
         width: 970px;
     }
 
 }
 /* large */
 @media (min-width: 1200px){
-    .parent{
+    .parent , .back{
         width: 1170px;
     }
 }
 
 .back{
-    width: 1000px;
     height: 295px;
     margin: auto;
+    background-image: url(../Img/img\ Background.png);
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.back img{
-    width: 800px;
-    margin: auto;
-    display: grid;
-}
 
 .back p{
     color: black;
-    position: absolute;
-    margin-top: -200px;
-    margin-left: 180px;
+    margin-top: 35px;
+    margin-left: -650px;
     width: 300px;
     text-align: left;
     font-size: 20px;
